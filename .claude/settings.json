@@ -17,6 +17,12 @@
         "source": "github",
         "repo": "headroomlabs-ai/headroom"
       }
+    },
+    "one-skill-to-rule-them-all": {
+      "source": {
+        "source": "github",
+        "repo": "rebelytics/one-skill-to-rule-them-all"
+      }
     }
   },
   "enabledPlugins": {
@@ -24,7 +30,8 @@
     "claude-code-setup@claude-plugins-official": true,
     "headroom@headroom-marketplace": true,
     "headroom-skill@headroom-marketplace": true,
-    "headroom-snip@headroom-marketplace": true
+    "headroom-snip@headroom-marketplace": true,
+    "task-observer-flush@one-skill-to-rule-them-all": true
   },
   "enabledMcpjsonServers": [
     "headroom"
