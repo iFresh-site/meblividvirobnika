@@ -11,10 +11,22 @@
         "source": "github",
         "repo": "anthropics/claude-plugins-official"
       }
+    },
+    "headroom-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "headroomlabs-ai/headroom"
+      }
     }
   },
   "enabledPlugins": {
     "claude-mem@thedotmack": true,
-    "claude-code-setup@claude-plugins-official": true
-  }
+    "claude-code-setup@claude-plugins-official": true,
+    "headroom@headroom-marketplace": true,
+    "headroom-skill@headroom-marketplace": true,
+    "headroom-snip@headroom-marketplace": true
+  },
+  "enabledMcpjsonServers": [
+    "headroom"
+  ]
 }
