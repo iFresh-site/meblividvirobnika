@@ -1,0 +1,21 @@
+# Netlify: статичний сайт без збирання
+[build]
+  publish = "."
+
+# Стара адреса сторінки веде на головну
+[[redirects]]
+  from = "/meblividvirobnika.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
